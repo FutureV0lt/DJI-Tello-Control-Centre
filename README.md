@@ -4,6 +4,8 @@ Dji Tello Drone control centre built from damiafuentas' DJITelloPy python interf
 A simple DJI Ryze Tello control centre with basic functionality. More will be coming soon!!
 This also enables the drone's camera and allows you to see it!
 
+Note that I cannot test this out since I do not own the drone, but there are very high chances this will work. If it doesn't, do let me know and I will be more than happy to look into it and fix it.
+
 # Usage:
 - 1 to take off
 - 0 to land
