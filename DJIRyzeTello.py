@@ -46,23 +46,23 @@ while True:
         print("Drone moving forward...")
 
     elif key == ord('a'):
-        tello.move_left
+        tello.move_left()
         print("Drone moving left...")
 
     elif key == ord('s'):
-        tello.move_back
+        tello.move_back()
         print("Drone moving back...")
 
     elif key == ord('d'):
-        tello.move_right
+        tello.move_right()
         print("Drone moving right...")
 
     elif key == ord('Up'):
-        tello.move_up
+        tello.move_up()
         print("Drone moving up...")
 
     elif key == ord('Down'):
-        tello.move_down
+        tello.move_down()
         print("Drone moving down...")
 
 #More coming soon!!
