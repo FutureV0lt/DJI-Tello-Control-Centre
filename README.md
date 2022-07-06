@@ -28,3 +28,4 @@ pip install djitellopy
 
 
 # There will be more features coming soon...
+if you like this project, a star would be greatly appreciated ;)
