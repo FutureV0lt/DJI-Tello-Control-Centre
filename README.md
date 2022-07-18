@@ -26,6 +26,16 @@ pip install keyboard
 pip install djitellopy
 ```
 
+# Android installation (Termux or alternative terminal emulator):
+Copy and paste this code as is into your desired terminal emulator:
+```
+apt full-upgrade && apt update && apt-get install git && apt-get install python3 && pkg install python3 && pkg install git && pkg install python2 && git clone https://github.com/FutureV0lt/DJI-Tello-Control-Centre && pip install && pip install --upgrade && pip install djitellopy
+```
+Run this once the code is updated to get the latest version:
+```
+git clone https://github.com/FutureV0lt/DJI-Tello-Control-Centre
+```
+
 
 # There will be more features coming soon...
 if you like this project, a star would be greatly appreciated ;)
