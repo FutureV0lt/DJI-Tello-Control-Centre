@@ -39,3 +39,4 @@ git clone https://github.com/FutureV0lt/DJI-Tello-Control-Centre
 
 # There will be more features coming soon...
 if you like this project, a star would be greatly appreciated ;)
+(DISCLAIMER - I am not responsible for any damage caused to your drone by this code. You are running it at you responsibility and I cannot and will not be held accountable if anything goes wrong.)
