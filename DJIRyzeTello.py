@@ -1,3 +1,5 @@
+from tkinter import S
+from turtle import right
 from djitellopy import Tello
 from threading import Thread
 import cv2, math, time
@@ -32,7 +34,48 @@ tello.streamon()
 
 frame_read = tello.get_frame_read()
 
-while True:
+def SpeedFast():
+    if key == ord('1'):
+        tello.takeoff()
+        print("Drone taking off...")
+
+    elif key == ord('0'):
+        tello.land()
+        print("Drone landing...")
+
+    elif key == ord('w'):
+        tello.move_forward(50)
+        print("Drone moving forward...")
+
+    elif key == ord('a'):
+        tello.move_left(50)
+        print("Drone moving left...")
+
+    elif key == ord('s'):
+        tello.move_back(50)
+        print("Drone moving back...")
+
+    elif key == ord('d'):
+        tello.move_right(50)
+        print("Drone moving right...")
+
+    elif key == ord('Up'):
+        tello.move_up(50)
+        print("Drone moving up...")
+
+    elif key == ord('Down'):
+        tello.move_down(50)
+        print("Drone moving down...")
+
+    elif key == ord('Right'):
+        tello.rotate_counter_clockwise(30)
+        print("Drone rotating right")
+
+    elif key == ord('Left'):
+        tello.rotate_clockwise(30)
+        print("Drone rotating left")
+
+def SpeedMedium():
     if key == ord('1'):
         tello.takeoff()
         print("Drone taking off...")
@@ -46,23 +89,98 @@ while True:
         print("Drone moving forward...")
 
     elif key == ord('a'):
-        tello.move_left()
+        tello.move_left(30)
         print("Drone moving left...")
 
     elif key == ord('s'):
-        tello.move_back()
+        tello.move_back(30)
         print("Drone moving back...")
 
     elif key == ord('d'):
-        tello.move_right()
+        tello.move_right(30)
         print("Drone moving right...")
 
     elif key == ord('Up'):
-        tello.move_up()
+        tello.move_up(30)
         print("Drone moving up...")
 
     elif key == ord('Down'):
-        tello.move_down()
+        tello.move_down(30)
         print("Drone moving down...")
 
-#More coming soon!!
+    elif key == ord('Right'):
+        tello.rotate_counter_clockwise(30)
+        print("Drone rotating right")
+
+    elif key == ord('Left'):
+        tello.rotate_clockwise(30)
+        print("Drone rotating left")
+
+def SpeedSlow():
+    if key == ord('1'):
+        tello.takeoff()
+        print("Drone taking off...")
+
+    elif key == ord('0'):
+        tello.land()
+        print("Drone landing...")
+
+    elif key == ord('w'):
+        tello.move_forward(10)
+        print("Drone moving forward...")
+
+    elif key == ord('a'):
+        tello.move_left(10)
+        print("Drone moving left...")
+
+    elif key == ord('s'):
+        tello.move_back(10)
+        print("Drone moving back...")
+
+    elif key == ord('d'):
+        tello.move_right(10)
+        print("Drone moving right...")
+
+    elif key == ord('Up'):
+        tello.move_up(10)
+        print("Drone moving up...")
+
+    elif key == ord('Down'):
+        tello.move_down(10)
+        print("Drone moving down...")
+
+    elif key == ord('Right'):
+        tello.rotate_counter_clockwise(30)
+        print("Drone rotating right")
+
+    elif 30 == ord('Left'):
+        tello.rotate_clockwise(30)
+        print("Drone rotating left")
+
+print("What speed would you like to fly the drone at?")
+print("Select 1 for Slow")
+print("Seelect 2 for Medium")
+print("Select 3 for Fast")
+
+inputSpeed = input("Select an option")
+
+if inputSpeed == 1:
+    SpeedSlow()
+
+elif inputSpeed == 2:
+    SpeedMedium()
+
+elif inputSpeed == 3:
+    SpeedFast()
+
+
+#More changes coming soon!!
+
+
+
+
+
+
+
+
+
